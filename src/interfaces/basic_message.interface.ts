@@ -1,0 +1,3 @@
+interface BasicMessage {
+    name: string;
+}

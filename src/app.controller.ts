@@ -1,9 +1,14 @@
 import { Controller, Get } from "@nestjs/common";
+import { QueueService } from "./queue/queue.service";
 
 @Controller('')
 export class AppController {
-  @Get()
-  async helloWorld() {
-    return "Hello World!";
-  }
+    constructor(
+        private readonly queueService: QueueService,
+    ) {}
+    
+    @Get()
+    async helloWorld() {
+        return await this.queueService.getSingleMessage();
+    }
 }
