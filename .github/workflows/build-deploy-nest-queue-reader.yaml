@@ -37,4 +37,5 @@ jobs:
         with:
           containerAppName: nest-queue-reader
           resourceGroup: SpotifyStorage-test
-          imageToDeploy: https://hub.docker.com/repository/docker/binimo:latest
+          registryUrl: registry.hub.docker.com
+          imageToDeploy: binimo/spotify-storage:latest
