@@ -36,6 +36,6 @@ jobs:
         uses: azure/container-apps-deploy-action@v1
         with:
           containerAppName: nest-queue-reader
-          resourceGroup: SpotifyStorage-test
+          resourceGroup: SpotifyStorage
           registryUrl: registry.hub.docker.com
           imageToDeploy: binimo/spotify-storage:latest
